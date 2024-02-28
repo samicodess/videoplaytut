@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video PLayer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/37d6505749.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="videoPlayer">
+      <div>
+        <div id="skip" style="transition: all linear 0.2s">
+          <p id="larr">&lArr;</p>
+          <p id="rarr">&rArr;</p>
+        </div>
+
+        <div class="speedcont" id="speedcont">
+          <p class="speed" id="sfive">0.5x</p>
+          <p class="speed" id="sone">1x</p>
+          <p class="speed" id="stwo">2x</p>
+        </div>
+
+        <video src="forest_vid.mp4" id="vid"></video>
+
+        <p><input type="range" id="prog" /></p>
+
+        <div class="playAndTime">
+          <p id="btnPlay">
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-pause"></i>
+          </p>
+
+          <div class="time">
+            <p id="currentMinute"></p>
+            <p>:</p>
+            <p id="currentSecond"></p>
+            <p>/</p>
+            <p id="totalMinute"></p>
+            <p>:</p>
+            <p id="totalSecond"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
